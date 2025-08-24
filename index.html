@@ -9,6 +9,43 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8662253235630377"
      crossorigin="anonymous"></script>
     <style>
+
+         html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.section-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.section-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.section-card h2 {
+  color: #1a2980;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.section-card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
         * {
             margin: 0;
             padding: 0;
@@ -488,10 +525,50 @@
                 </div>
             </div>
         </div>
-        
-        <footer>
+              <div class="section-row">
+
+            
+            <div class="section-card" id="about">
+              <h2>ℹ️ About</h2>
+              <p>PDF Merger is a free and secure tool that makes PDF management fast, private, and easy.</p>
+            </div>
+          
+            <div class="section-card" id="contact">
+              <h2>📩 Contact</h2>
+              <p>Have questions? Email us at <strong>albinthomas2732@gmail.com</strong>.</p>
+            </div>
+          
+            <div class="section-card" id="privacy">
+                <h2>Privacy Policy</h2>
+                <p>We respect your privacy. This site uses cookies and third-party services like Google AdSense and Google Analytics.</p>
+                <p>For more details visit: 
+                  <a href="https://policies.google.com/technologies/partner-sites" target="_blank">Google Privacy Policy</a>
+                </p>
+            </div>
+          
+            <div class="section-card" id="terms">
+                <h2>Terms of Service</h2>
+                <ul>
+                  <li>You must have the rights to the files you upload.</li>
+                  <li>This service is provided “as is” without warranties.</li>
+                  <li>We are not responsible for any loss or damage from using this site.</li>
+                </ul>
+            </div>
+          
+          </div>
+          
+</div>
+
+    <footer>
             <p>PDF Merger &copy; 2025 | All processing happens in your browser - your files are never uploaded to any server</p>
-        </footer>
+        <p>
+          <a href="#">About</a> | 
+          <a href="#">Privacy Policy</a> | 
+          <a href="#">Terms of Service</a> | 
+          <a href="#">Contact</a>
+        </p>
+        <p>&copy; 2025 PDF Merger. All rights reserved.</p>
+      </footer>
     </div>
 
     <script>
